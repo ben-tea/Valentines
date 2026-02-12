@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import "./App.css"
 import ConfettiCanvas from "./ConfettiCanvas.jsx"
+import catGif from './assets/cat-cat-love.gif'
 
 function App() {
   const [noStyle, setNoStyle] = useState({})
@@ -71,7 +72,7 @@ const moveNoButton = (e) => {
 
       <div className="card" style={{ position: "relative", zIndex: 1 }}>
         <h1>💖 Hooray!!! 💖</h1>
-        <img src="/cat-cat-love.gif"/>
+        <img src={catGif}/>
         <p className="love-message">
           pls let me crack 🥺
         </p>
